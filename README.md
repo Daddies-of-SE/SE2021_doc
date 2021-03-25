@@ -54,3 +54,15 @@
 * 6.18：项目开发总结与反思汇报，提交代码及全部文档
 
 此外，3.26~6.4中每周五均需提交周报、汇报进度（共11周）
+
+## 参考资料
+
+### 小程序开发相关
+
+* 注：小程序前端主要为wxss(魔改css)、wxml(魔改html)、javascript，其中前两者可以在官方文档中查询
+
+[微信开发者文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+
+[小程序设计指南](https://developers.weixin.qq.com/miniprogram/design/)
+
+[javascript教程](https://www.runoob.com/js/js-tutorial.html)
