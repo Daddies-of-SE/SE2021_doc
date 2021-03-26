@@ -1,8 +1,8 @@
-# 会议纪要
+# 工作记录
 
+## Week1 3.19-3.25
 
-
-## M1 - 3.21
+### 会议纪要 M1 - 3.21
 
 * ~~学习了三教教师休息室门锁的开启方式~~
 
@@ -12,11 +12,11 @@
 
   * 用户端
 
-  <img src="Meetings.assets/image-20210324150528404.png" alt="image-20210324150528404" style="zoom:50%;" />
+  <img src="WorkRecord.assets/image-20210324150528404.png" alt="image-20210324150528404" style="zoom:50%;" />
   
   * 系统端
 
-<img src="Meetings.assets/image-20210324150550925.png" alt="image-20210324150550925" style="zoom:50%;" />
+<img src="WorkRecord.assets/image-20210324150550925.png" alt="image-20210324150550925" style="zoom:50%;" />
 
 
 
@@ -33,3 +33,13 @@
 | 王佳瑞 |       |          |
 | 李永毅 | 1、2  | 进行中   |
 
+
+
+## Week2 3.26-4.1
+
+### TODO
+
+- [ ] 增加分享功能
+- [ ] 调整周报整体计划
+- [ ] 调整个性化推荐需求
+- [x] 增加文档历史版本
