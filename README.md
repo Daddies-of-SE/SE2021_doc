@@ -34,6 +34,7 @@
 * 小程序管理发布：[微信公众平台](https://mp.weixin.qq.com/)
   * 微信扫码登录，选择18231047@buaa.edu.cn的账号
 * 日常沟通及文件传输：qq群
+* 最终版周报和汇报PPT： [北航云盘](https://bhpan.buaa.edu.cn:443/link/DE614D02BE70380939C4C3EF3607C8BD 有效期限：2021-07-31 23:59)
 
 
 
