@@ -67,3 +67,6 @@
 [小程序设计指南](https://developers.weixin.qq.com/miniprogram/design/)
 
 [javascript教程](https://www.runoob.com/js/js-tutorial.html)
+
+[微信小程序开发资源汇总](https://github.com/justjavac/awesome-wechat-weapp)
+
