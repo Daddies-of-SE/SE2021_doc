@@ -28,8 +28,10 @@
 ## 平台工具
 
 * 周报：腾讯文档
-* 文档：Github Organization仓库（此仓库）
-* 源代码开发管理：Github Organization仓库
+* 文档：此仓库
+* 源代码管理：[前端仓库](https://github.com/Daddies-of-SE/ReedSailing-FrontEnd)，[后端仓库](https://github.com/Daddies-of-SE/ReedSailing-BackEnd)
+* 前端开发：小程序开发者工具
+* 后端开发：华为云
 * 小程序管理发布：[微信公众平台](https://mp.weixin.qq.com/)
   * 微信扫码登录，选择18231047@buaa.edu.cn的账号
 * 日常沟通及文件传输：qq群
@@ -70,4 +72,16 @@
 [javascript教程](https://www.runoob.com/js/js-tutorial.html)
 
 [微信小程序开发资源汇总](https://github.com/justjavac/awesome-wechat-weapp)
+
+[小程序UI组件库](https://github.com/youzan/vant-weapp)
+
+### 后端框架
+
+[Django菜鸟教程](https://www.runoob.com/django/django-tutorial.html)
+
+[SpringBoot-Labs](https://github.com/YunaiV/SpringBoot-Labs)
+
+[SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning)
+
+[SpringBoot-知乎](https://www.zhihu.com/question/50958416)
 
