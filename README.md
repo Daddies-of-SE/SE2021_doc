@@ -61,7 +61,7 @@
 
 ## 参考资料
 
-### 小程序开发相关
+### 小程序前端
 
 * 注：小程序前端主要为wxss(魔改css)、wxml(魔改html)、javascript，其中前两者可以在官方文档中查询
 
@@ -74,6 +74,10 @@
 [微信小程序开发资源汇总](https://github.com/justjavac/awesome-wechat-weapp)
 
 [小程序UI组件库](https://github.com/youzan/vant-weapp)
+
+### 管理员web端
+
+[X-admin](https://gitee.com/daniuit/X-admin)
 
 ### 后端框架
 
