@@ -4,13 +4,13 @@
 
 ## Django基础
 
-[Django基础学习资料](./django基础/index.html)
+Django基础学习资料： 本地打开  	 ./django基础/index.html 
 
 ### DRF
 
 [RESTful架构详解-菜鸟教程](https://www.runoob.com/w3cnote/restful-architecture.html)
 
-[DRF学习资料](./DRF资料/index.html)
+DRF学习资料： 本地打开 	./DRF资料/index.html
 
 
 
