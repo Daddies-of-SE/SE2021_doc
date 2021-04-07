@@ -1,0 +1,1166 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book Django基础 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>调整列表页展示 | Django基础</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../C07-Admin/ModifyEditDisplay.html" />
+    
+    
+    <link rel="prev" href="../C07-Admin/Config.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="8.2"
+        data-chapter-title="调整列表页展示"
+        data-filepath="C07-Admin/ModifyListDisplay.md"
+        data-basepath=".."
+        data-revision="Mon Mar 11 2019 18:07:47 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Python Web 框架要点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="AboutDjango.html">
+            
+                
+                    <a href="../AboutDjango.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Django介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="C01-CreateProject/index.html">
+            
+                
+                    <a href="../C01-CreateProject/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        1.工程搭建
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="C01-CreateProject/EnvInstall.html">
+            
+                
+                    <a href="../C01-CreateProject/EnvInstall.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        环境安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="C01-CreateProject/StartProject.html">
+            
+                
+                    <a href="../C01-CreateProject/StartProject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        创建工程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="C01-CreateProject/StartApp.html">
+            
+                
+                    <a href="../C01-CreateProject/StartApp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        创建子应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="C01-CreateProject/CreateView.html">
+            
+                
+                    <a href="../C01-CreateProject/CreateView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        创建视图
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="C02-SettingsStaticAndURL/index.html">
+            
+                
+                    <a href="../C02-SettingsStaticAndURL/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        2.配置、静态文件与路由
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="C02-SettingsStaticAndURL/Settings.html">
+            
+                
+                    <a href="../C02-SettingsStaticAndURL/Settings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        配置文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="C02-SettingsStaticAndURL/StaticFiles.html">
+            
+                
+                    <a href="../C02-SettingsStaticAndURL/StaticFiles.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        静态文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="C02-SettingsStaticAndURL/URL.html">
+            
+                
+                    <a href="../C02-SettingsStaticAndURL/URL.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        路由说明
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="C03-RequestAndResponse/index.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        3.请求与响应
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="C03-RequestAndResponse/Request.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Request.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        请求Request
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="C03-RequestAndResponse/Response.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Response.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        响应Response
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="C03-RequestAndResponse/Cookie.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Cookie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Cookie
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="C03-RequestAndResponse/Session1.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Session1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Session
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="C03-RequestAndResponse/Session2.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Session2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.1.</b>
+                        
+                        Session配置和存储
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="C03-RequestAndResponse/Session3.html">
+            
+                
+                    <a href="../C03-RequestAndResponse/Session3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.2.</b>
+                        
+                        Session操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="C04-ClassViewAndMiddleware/index.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        4.类视图与中间件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="C04-ClassViewAndMiddleware/ClassView.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/ClassView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        类视图
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="C04-ClassViewAndMiddleware/ClassView1.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/ClassView1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                        定义类视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="C04-ClassViewAndMiddleware/ClassView2.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/ClassView2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                        类视图原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="C04-ClassViewAndMiddleware/ClassView3.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/ClassView3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.3.</b>
+                        
+                        类视图添加装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="C04-ClassViewAndMiddleware/ClassView4.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/ClassView4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.4.</b>
+                        
+                        类视图Mixin扩展类
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="C04-ClassViewAndMiddleware/Middleware.html">
+            
+                
+                    <a href="../C04-ClassViewAndMiddleware/Middleware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        中间件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="C05-Template/index.html">
+            
+                
+                    <a href="../C05-Template/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        5.模板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="C05-Template/template.html">
+            
+                
+                    <a href="../C05-Template/template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Django自带模板
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="C05-Template/template_1.html">
+            
+                
+                    <a href="../C05-Template/template_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.1.</b>
+                        
+                        模板配置使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="C05-Template/template_2.html">
+            
+                
+                    <a href="../C05-Template/template_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.2.</b>
+                        
+                        模板基本语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="C05-Template/template_3.html">
+            
+                
+                    <a href="../C05-Template/template_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.3.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="C05-Template/template_4.html">
+            
+                
+                    <a href="../C05-Template/template_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.4.</b>
+                        
+                        模板继承
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="C05-Template/template_5.html">
+            
+                
+                    <a href="../C05-Template/template_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.5.</b>
+                        
+                        模板注释
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="C05-Template/template2.html">
+            
+                
+                    <a href="../C05-Template/template2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Jinja模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="C05-Template/csrf.html">
+            
+                
+                    <a href="../C05-Template/csrf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        csrf攻击
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="C06-Database/index.html">
+            
+                
+                    <a href="../C06-Database/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        6.数据库
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="C06-Database/Config.html">
+            
+                
+                    <a href="../C06-Database/Config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="C06-Database/Model.html">
+            
+                
+                    <a href="../C06-Database/Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        定义模型类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="C06-Database/Tools.html">
+            
+                
+                    <a href="../C06-Database/Tools.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        演示工具使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="C06-Database/CURD.html">
+            
+                
+                    <a href="../C06-Database/CURD.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        数据库操作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.1" data-path="C06-Database/curd1.html">
+            
+                
+                    <a href="../C06-Database/curd1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.1.</b>
+                        
+                        增加
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.2" data-path="C06-Database/curd2.html">
+            
+                
+                    <a href="../C06-Database/curd2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.2.</b>
+                        
+                        删除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.3" data-path="C06-Database/curd3.html">
+            
+                
+                    <a href="../C06-Database/curd3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.3.</b>
+                        
+                        修改
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4" data-path="C06-Database/curd4.html">
+            
+                
+                    <a href="../C06-Database/curd4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.4.</b>
+                        
+                        查询
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.4.1" data-path="C06-Database/curd5/query1.html">
+            
+                
+                    <a href="../C06-Database/curd5/query1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.4.1.</b>
+                        
+                        过滤查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4.2" data-path="C06-Database/curd5/query2.html">
+            
+                
+                    <a href="../C06-Database/curd5/query2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.4.2.</b>
+                        
+                        F和Q对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4.3" data-path="C06-Database/curd5/query3.html">
+            
+                
+                    <a href="../C06-Database/curd5/query3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.4.3.</b>
+                        
+                        聚合查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.4.4" data-path="C06-Database/curd5/query4.html">
+            
+                
+                    <a href="../C06-Database/curd5/query4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.4.4.</b>
+                        
+                        关联查询
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="C06-Database/QuerySet.html">
+            
+                
+                    <a href="../C06-Database/QuerySet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        查询集QuerySet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="C06-Database/Manager.html">
+            
+                
+                    <a href="../C06-Database/Manager.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        管理器Manager
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="C07-Admin/index.html">
+            
+                
+                    <a href="../C07-Admin/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        7.Admin站点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="C07-Admin/Config.html">
+            
+                
+                    <a href="../C07-Admin/Config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        使用Admin站点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.2" data-path="C07-Admin/ModifyListDisplay.html">
+            
+                
+                    <a href="../C07-Admin/ModifyListDisplay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        调整列表页展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="C07-Admin/ModifyEditDisplay.html">
+            
+                
+                    <a href="../C07-Admin/ModifyEditDisplay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        调整编辑页展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="C07-Admin/UploadImage.html">
+            
+                
+                    <a href="../C07-Admin/UploadImage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        上传图片
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Django基础</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8C03;&#x6574;&#x5217;&#x8868;&#x9875;&#x5C55;&#x793A;">&#x8C03;&#x6574;&#x5217;&#x8868;&#x9875;&#x5C55;&#x793A;</h1>
+<h2 id="&#x8C03;&#x6574;&#x5217;&#x8868;&#x9875;&#x548C;&#x7F16;&#x8F91;&#x9875;&#x5FC5;&#x987B;&#x5148;&#x5B9A;&#x4E49;&#x4E0E;&#x4F7F;&#x7528;admin&#x7BA1;&#x7406;&#x7C7B;">&#x8C03;&#x6574;&#x5217;&#x8868;&#x9875;&#x548C;&#x7F16;&#x8F91;&#x9875;&#x5FC5;&#x987B;&#x5148;---&#x5B9A;&#x4E49;&#x4E0E;&#x4F7F;&#x7528;Admin&#x7BA1;&#x7406;&#x7C7B;</h2>
+<p>Django&#x63D0;&#x4F9B;&#x7684;Admin&#x7AD9;&#x70B9;&#x7684;&#x5C55;&#x793A;&#x6548;&#x679C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;<strong>ModelAdmin</strong>&#x7C7B;&#x6765;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x7BA1;&#x7406;&#x7C7B;&#x9700;&#x8981;&#x7EE7;&#x627F;&#x81EA;<strong>admin.ModelAdmin</strong>&#x7C7B;&#xFF0C;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x7C7B;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x6CE8;&#x518C;&#x53C2;&#x6570;</p>
+<pre><code class="lang-python">admin.site.register(BookInfo,BookInfoAdmin)
+</code></pre>
+</li>
+<li><p>&#x88C5;&#x9970;&#x5668;</p>
+<pre><code class="lang-python"><span class="hljs-decorator">@admin.register(BookInfo)</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="1-&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5217;&#x663E;&#x793A;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;">1 &#x5217;&#x8868;&#x4E2D;&#x7684;&#x5217;&#x663E;&#x793A;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;</h4>
+<p>&#x5C5E;&#x6027;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>list_display=[&#x6A21;&#x578B;&#x5B57;&#x6BB5;1,&#x6A21;&#x578B;&#x5B57;&#x6BB5;2,...]
+</code></pre><p>1&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;BookInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    list_display = [<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-string">&apos;btitle&apos;</span>]
+</code></pre>
+<h4 id="2-&#x9875;&#x5927;&#x5C0F;">2 &#x9875;&#x5927;&#x5C0F;</h4>
+<p>&#x6BCF;&#x9875;&#x4E2D;&#x663E;&#x793A;&#x591A;&#x5C11;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x6BCF;&#x9875;&#x663E;&#x793A;100&#x6761;&#x6570;&#x636E;&#xFF0C;&#x5C5E;&#x6027;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">list_per_page=<span class="hljs-number">100</span>
+</code></pre>
+<p>1&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;AreaAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    list_per_page = <span class="hljs-number">2</span>
+</code></pre>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x67E5;&#x770B;&#x533A;&#x57DF;&#x4FE1;&#x606F;&#x7684;&#x5217;&#x8868;&#x9875;&#x9762;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_option.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<h4 id="3--&#x64CD;&#x4F5C;&#x9009;&#x9879;&#x7684;&#x4F4D;&#x7F6E;">3  &quot;&#x64CD;&#x4F5C;&#x9009;&#x9879;&quot;&#x7684;&#x4F4D;&#x7F6E;</h4>
+<p>&#x9876;&#x90E8;&#x663E;&#x793A;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;True&#x5728;&#x9876;&#x90E8;&#x663E;&#x793A;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;False&#x4E0D;&#x5728;&#x9876;&#x90E8;&#x663E;&#x793A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</p>
+<pre><code class="lang-python">actions_on_top=<span class="hljs-keyword">True</span>
+</code></pre>
+<p>&#x5E95;&#x90E8;&#x663E;&#x793A;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;True&#x5728;&#x5E95;&#x90E8;&#x663E;&#x793A;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;False&#x4E0D;&#x5728;&#x5E95;&#x90E8;&#x663E;&#x793A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</p>
+<pre><code class="lang-python">actions_on_bottom=<span class="hljs-keyword">False</span>
+</code></pre>
+<p>1&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;BookInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    actions_on_top = <span class="hljs-keyword">True</span>
+    actions_on_bottom = <span class="hljs-keyword">True</span>
+</code></pre>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_option_top.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_option_col.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<p><strong>&#x70B9;&#x51FB;&#x5217;&#x5934;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5347;&#x5E8F;&#x6216;&#x964D;&#x5E8F;&#x6392;&#x5217;&#x3002;</strong></p>
+<h4 id="4--&#x53F3;&#x4FA7;&#x680F;&#x8FC7;&#x6EE4;&#x5668;">4  &#x53F3;&#x4FA7;&#x680F;&#x8FC7;&#x6EE4;&#x5668;</h4>
+<p>&#x5C5E;&#x6027;&#x5982;&#x4E0B;&#xFF0C;&#x53EA;&#x80FD;&#x63A5;&#x6536;&#x5B57;&#x6BB5;&#xFF0C;&#x4F1A;&#x5C06;&#x5BF9;&#x5E94;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x5217;&#x51FA;&#x6765;&#xFF0C;&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x8FC7;&#x6EE4;&#x3002;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x6709;&#x91CD;&#x590D;&#x503C;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+<pre><code>list_filter=[]
+</code></pre><p>1&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;HeroInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeroInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    list_filter = [<span class="hljs-string">&apos;hbook&apos;</span>, <span class="hljs-string">&apos;hgender&apos;</span>]
+</code></pre>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/admin_filter.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<h4 id="5-&#x641C;&#x7D22;&#x6846;">5 &#x641C;&#x7D22;&#x6846;</h4>
+<p>&#x5C5E;&#x6027;&#x5982;&#x4E0B;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#xFF0C;&#x652F;&#x6301;&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#x3002;&#x5217;&#x8868;&#x7C7B;&#x578B;&#xFF0C;&#x8868;&#x793A;&#x5728;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x4E0A;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#x3002;</p>
+<pre><code>search_fields=[]
+</code></pre><p>1&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;HeroInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeroInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    search_fields = [<span class="hljs-string">&apos;hname&apos;</span>]
+</code></pre>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_search.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<h4 id="6--&#x5C06;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x5217;">6  &#x5C06;&#x65B9;&#x6CD5;&#x4F5C;&#x4E3A;&#x5217;</h4>
+<p>&#x5217;&#x53EF;&#x4EE5;&#x662F;&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x6A21;&#x578B;&#x65B9;&#x6CD5;&#xFF0C;&#x8981;&#x6C42;&#x65B9;&#x6CD5;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<p><strong>&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;short_description&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5728;admin&#x7AD9;&#x70B9;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x5217;&#x540D;&#x3002;</strong></p>
+<p>1&#xFF09;&#x6253;&#x5F00;booktest/models.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;BookInfo&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfo</span><span class="hljs-params">(models.Model)</span>:</span>
+    ...
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pub_date</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.bpub_date.strftime(<span class="hljs-string">&apos;%Y&#x5E74;%m&#x6708;%d&#x65E5;&apos;</span>)
+
+    pub_date.short_description = <span class="hljs-string">&apos;&#x53D1;&#x5E03;&#x65E5;&#x671F;&apos;</span>  <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#x5B57;&#x6BB5;&#x5728;admin&#x4E2D;&#x663E;&#x793A;&#x7684;&#x6807;&#x9898;</span>
+</code></pre>
+<p>2&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;BookInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    list_display = [<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-string">&apos;atitle&apos;</span>,<span class="hljs-string">&apos;pub_date&apos;</span>]
+</code></pre>
+<p>3&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_option_method_col.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<p>&#x65B9;&#x6CD5;&#x5217;&#x662F;&#x4E0D;&#x80FD;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6392;&#x5E8F;&#x9700;&#x8981;&#x4E3A;&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x4F9D;&#x636E;&#x3002;</p>
+<pre><code>admin_order_field=&#x6A21;&#x578B;&#x7C7B;&#x5B57;&#x6BB5;
+</code></pre><p>1&#xFF09;&#x6253;&#x5F00;booktest/models.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;BookInfo&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfo</span><span class="hljs-params">(models.Model)</span>:</span>
+    ...
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">pub_date</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.bpub_date.strftime(<span class="hljs-string">&apos;%Y&#x5E74;%m&#x6708;%d&#x65E5;&apos;</span>)
+
+    pub_date.short_description = <span class="hljs-string">&apos;&#x53D1;&#x5E03;&#x65E5;&#x671F;&apos;</span>
+    pub_date.admin_order_field = <span class="hljs-string">&apos;bpub_date&apos;</span>
+</code></pre>
+<p>2&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/admin_order_filed.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+<h4 id="7--&#x5173;&#x8054;&#x5BF9;&#x8C61;">7  &#x5173;&#x8054;&#x5BF9;&#x8C61;</h4>
+<p>&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x578B;&#x7C7B;&#x4E2D;&#x5C01;&#x88C5;&#x65B9;&#x6CD5;&#xFF0C;&#x8BBF;&#x95EE;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x6210;&#x5458;&#x3002;</p>
+<p>1&#xFF09;&#x6253;&#x5F00;booktest/models.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;HeroInfo&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeroInfo</span><span class="hljs-params">(models.Model)</span>:</span>
+    ...
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.hbook.bread
+
+    read.short_description = <span class="hljs-string">&apos;&#x56FE;&#x4E66;&#x9605;&#x8BFB;&#x91CF;&apos;</span>
+</code></pre>
+<p>2&#xFF09;&#x6253;&#x5F00;booktest/admin.py&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;HeroInfoAdmin&#x7C7B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeroInfoAdmin</span><span class="hljs-params">(admin.ModelAdmin)</span>:</span>
+    ...
+    list_display = [<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-string">&apos;hname&apos;</span>, <span class="hljs-string">&apos;hbook&apos;</span>, <span class="hljs-string">&apos;read&apos;</span>]
+</code></pre>
+<p>3&#xFF09;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5237;&#x65B0;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="../images/list_relate_obj.png" alt="&#x5217;&#x8868;&#x9875;&#x9009;&#x9879;"></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../C07-Admin/Config.html" class="navigation navigation-prev " aria-label="Previous page: 使用Admin站点"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../C07-Admin/ModifyEditDisplay.html" class="navigation navigation-next " aria-label="Next page: 调整编辑页展示"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Django基础 -->
+</html>

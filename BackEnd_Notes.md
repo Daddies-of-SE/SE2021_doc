@@ -2,6 +2,18 @@
 
 [TOC]
 
+## Django基础
+
+[Django基础学习资料](./django基础/index.html)
+
+### DRF
+
+[RESTful架构详解-菜鸟教程](https://www.runoob.com/w3cnote/restful-architecture.html)
+
+[DRF学习资料](./DRF资料/index.html)
+
+
+
 ## Django数据库
 
 [使用默认sqlite3创建数据库](https://blog.csdn.net/qq_39248122/article/details/88864979)
@@ -9,6 +21,10 @@
 [使用MySql创建数据库](https://blog.csdn.net/u011109881/article/details/51901032)
 
 [Django对数据库操作](https://www.runoob.com/django/django-model.html)
+
+
+
+
 
 
 
