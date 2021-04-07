@@ -31,6 +31,8 @@ DRF学习资料： 本地打开 	./DRF资料/index.html
 ## TODO 2021.4.5 wjr
 
 - [ ] 组织头像上传方式网址还是保存到服务器某个路径的文件(确定属性类别写法)；
-- [ ] 用mysql数据库还是sqlite3(Django自带)
-- [ ] 活动类别扩展
+- [x] 用mysql数据库还是sqlite3(Django自带) 
+  - [x] Mysql
+- [x] 活动类别扩展 
+  - [x] 活动类别改成表了
 
