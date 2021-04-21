@@ -85,3 +85,11 @@
 ### Layui文档
 
 https://www.layui.com/doc/
+
+
+
+### LocalStorage的使用
+
+这个可以用来在页面间传信息
+
+https://www.cnblogs.com/st-leslie/p/5617130.html
