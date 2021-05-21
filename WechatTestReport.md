@@ -139,6 +139,10 @@ TODO
 
 #### 7.1.1 xxx功能
 
+测试目的：
+
+
+
 | 测试目的     |              |
 | ------------ | ------------ |
 | **用例**     | **测试结果** |
@@ -146,6 +150,50 @@ TODO
 |              |              |
 | **测试结论** |              |
 
-
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">XXX</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">朕</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/21</td>
+    </tr>
+</table>
 
 #### 7.1.2 xxx功能
+
