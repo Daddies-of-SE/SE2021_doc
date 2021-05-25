@@ -327,17 +327,11 @@ TODO
 <table>
     <tr>
         <th>测试目的</th>
-        <td colspan="5">测试XXXX</td>
+        <td colspan="5">测试进入“活动管理”页面能否查看完整的活动列表</td>
     </tr>
     <tr>
         <th>前提条件</th>
-        <td colspan="5">无</td>
-    </tr>
-    <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
+        <td colspan="5">登录超级管理员账号</td>
     </tr>
     <tr>
         <th>用例编号</th>
@@ -349,27 +343,11 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1</td>
+        <td>查看所有的活动</td>
         <td>无</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>无</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>社团，博雅，学生会，志愿，个人版块下所有的活动</td>
+        <td>社团，博雅，学生会，志愿，个人版块下所有的活动</td>
         <td>无</td>
     </tr>
     <!-- >想插入更多行请复制以上内容</-->
@@ -381,9 +359,10 @@ TODO
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
+
 
 
 #### 7.5.2 搜索活动
@@ -398,12 +377,6 @@ TODO
         <td colspan="5">无</td>
     </tr>
     <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
-    </tr>
-    <tr>
         <th>用例编号</th>
         <th>用例说明</th>
         <th>输入/操作</th>
@@ -413,15 +386,7 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>无</td>
-    </tr>
-    <tr>
-        <td></td>
+        <td>1</td>
         <td></td>
         <td></td>
         <td></td>
@@ -429,7 +394,15 @@ TODO
         <td>无</td>
     </tr>
     <tr>
+        <td>2</td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>3</td>
         <td></td>
         <td></td>
         <td></td>
@@ -445,7 +418,7 @@ TODO
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
 
@@ -454,17 +427,11 @@ TODO
 <table>
     <tr>
         <th>测试目的</th>
-        <td colspan="5">测试XXXX</td>
+        <td colspan="5">测试管理端能否创建活动</td>
     </tr>
     <tr>
         <th>前提条件</th>
-        <td colspan="5">无</td>
-    </tr>
-    <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
+        <td colspan="5">登录超级管理员账号</td>
     </tr>
     <tr>
         <th>用例编号</th>
@@ -476,27 +443,27 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1</td>
+        <td>在社团板块下创建未开始活动</td>
+        <td>活动名称:"这是管理端创建的活动" ;开始时间:"2021-05-26 08:00:00" ;结束时间:"2021-05-28 20:30:00" ;人数限制:10 ;描述:"" ;发起人:"yy"; 分类:"娱乐" ;地点:"绿园情侣幽会处" ;板块:社团 ;组织:"windows吐槽大会" ;</td>
+        <td>管理端的活动列表出现此活动；小程序端对应的社团组织下出现此活动</td>
+        <td>管理端的活动列表出现此活动；小程序端对应的社团组织下出现此活动</td>
         <td>无</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>2</td>
+        <td>在博雅板块下创建正在进行的活动</td>
+        <td>活动名称:"新博雅" ;开始时间:"2021-05-24 00:00:00" ;结束时间:"2021-05-27 00:00:00" ;人数限制:10 ;描述:"" ;发起人:"行"; 分类:"娱乐" ;地点:"人文讲堂" ;板块:博雅 ;组织:"" ;</td>
+        <td>无法创建活动</td>
+        <td>无法创建活动，显示“开始时间不能早于当前时间”</td>
         <td>无</td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <tr>
+        <td>3</td>
+        <td>在博雅板块下创建未开始活动</td>
+        <td>活动名称:"新博雅" ;开始时间:"2021-05-26 00:00:00" ;结束时间:"2021-05-28 00:00:00" ;人数限制:10 ;描述:"" ;发起人:"行"; 分类:"娱乐" ;地点:"人文讲堂" ;板块:博雅 ;组织:"" ;</td>
+        <td>管理端的活动列表出现此活动；小程序端博雅板块下出现此活动</td>
+        <td>管理端的活动列表出现此活动；小程序端博雅板块下出现此活动</td>
         <td>无</td>
     </tr>
     <!-- >想插入更多行请复制以上内容</-->
@@ -508,7 +475,7 @@ TODO
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
 
@@ -517,17 +484,11 @@ TODO
 <table>
     <tr>
         <th>测试目的</th>
-        <td colspan="5">测试XXXX</td>
+        <td colspan="5">测试能否修改已发布活动的名称，开始时间，结束时间，描述，人数上限，地点信息</td>
     </tr>
     <tr>
         <th>前提条件</th>
-        <td colspan="5">无</td>
-    </tr>
-    <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
+        <td colspan="5">登录超级管理员账号</td>
     </tr>
     <tr>
         <th>用例编号</th>
@@ -539,23 +500,23 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1</td>
+        <td>修改正在进行活动的名称和描述</td>
+        <td>活动名“长期招募推送编辑”变更为"长期招募推送编辑，有意者私聊"；描述“1”变更为“待遇丰厚，有能力者优先”</td>
+        <td>管理端和小程序端显示的活动名称和描述按照修改内容变更</td>
+        <td>修改失败，显示“开始时间不能早于当前时间”</td>
         <td>无</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>2</td>
+        <td>修改未开始活动的名称和描述</td>
+        <td>无</td>
+        <td>管理端和小程序端显示的活动名称和描述按照修改内容变更</td>
+        <td>编辑按钮无法点开</td>
         <td>无</td>
     </tr>
     <tr>
-        <td></td>
+        <td>3</td>
         <td></td>
         <td></td>
         <td></td>
@@ -565,13 +526,13 @@ TODO
     <!-- >想插入更多行请复制以上内容</-->
     <tr>
         <th>测试结论</th>
-        <td colspan="5">通过</td>
+        <td colspan="5">不通过</td>
     </tr>
     <tr>
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
 
@@ -580,17 +541,11 @@ TODO
 <table>
     <tr>
         <th>测试目的</th>
-        <td colspan="5">测试XXXX</td>
+        <td colspan="5">测试能否删除活动</td>
     </tr>
     <tr>
         <th>前提条件</th>
-        <td colspan="5">无</td>
-    </tr>
-    <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
+        <td colspan="5">登录超级管理员账号</td>
     </tr>
     <tr>
         <th>用例编号</th>
@@ -602,27 +557,27 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1</td>
+        <td>删除id=95的已结束活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
         <td>无</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>2</td>
+        <td>删除id=41的正在进行活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
         <td>无</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>3</td>
+        <td>删除id=103的未开始活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
         <td>无</td>
     </tr>
     <!-- >想插入更多行请复制以上内容</-->
@@ -634,26 +589,21 @@ TODO
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
+
 
 #### 7.5.6 批量删除活动
 
 <table>
     <tr>
         <th>测试目的</th>
-        <td colspan="5">测试XXXX</td>
+        <td colspan="5">测试能否批量删除活动</td>
     </tr>
     <tr>
         <th>前提条件</th>
-        <td colspan="5">无</td>
-    </tr>
-    <tr>
-        <th>参考信息</th>
-        <td colspan="2">无</td>
-        <th>特殊说明</th>
-        <td colspan="2">无</td>
+        <td colspan="5">登录超级管理员账号</td>
     </tr>
     <tr>
         <th>用例编号</th>
@@ -665,42 +615,25 @@ TODO
     </tr>
     <!-- >想插入更多行请复制以下内容</-->
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>1</td>
+        <td>删除id=78,79,102的活动</td>
         <td>无</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>无</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>管理端和小程序端这些活动被删除</td>
+        <td>实际上管理端和小程序端这些活动被删除,但是显示“部分活动未删除，请重新尝试”的窗口</td>
         <td>无</td>
     </tr>
     <!-- >想插入更多行请复制以上内容</-->
     <tr>
         <th>测试结论</th>
-        <td colspan="5">通过</td>
+        <td colspan="5">不通过</td>
     </tr>
     <tr>
         <th>测试人员</th>
         <td colspan="2">乐洋</td>
         <th>测试日期</th>
-        <td colspan="2">2021/5/23</td>
+        <td colspan="2">2021/5/25</td>
     </tr>
 </table>
-
 
 
 
