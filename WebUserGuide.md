@@ -108,7 +108,7 @@
 
 ## 3 运行环境
 
-支持Chrome或Firefox浏览器
+支持Chrome或Firefox等主流浏览器。
 
 
 
@@ -204,13 +204,11 @@ https://www.reedsailing.xyz/login.html
 
 
 
-## 7 操作命令一览表
 
 
+## 7 程序文件和数据文件一览表
 
-## 8 程序文件和数据文件一览表
-
-### 8.1 小程序前端
+### 7.1 小程序前端
 
 | 目录/文件    | 描述                                             |
 | ------------ | ------------------------------------------------ |
@@ -226,7 +224,7 @@ https://www.reedsailing.xyz/login.html
 | sitemap.json | 小程序索引配置                                   |
 | theme.json   | 小程序全局主题样式                               |
 
-### 8.2 Web前端
+### 7.2 Web前端
 
 | 目录/文件                | 描述             |
 | ------------------------ | ---------------- |
@@ -256,7 +254,7 @@ https://www.reedsailing.xyz/login.html
 | organization-list.html   | 组织列表页面     |
 | README.md                | 自述文件         |
 
-### 8.3 后端
+### 7.3 后端
 
 | 目录/文件        | 描述                 |
 | ---------------- | -------------------- |
@@ -264,5 +262,4 @@ https://www.reedsailing.xyz/login.html
 | django_backend/  | django后端文件目录   |
 | requirements.txt | python依赖包列表文件 |
 | README.md        | 自述文件             |
-
 
