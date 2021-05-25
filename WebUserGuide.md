@@ -112,37 +112,62 @@
 
 
 
-## 4 使用说明
+
+
+## 4 开发者使用说明
 
 ### 4.1 安装和初始化
 
+#### 4.1.1 Web前端
 
+- 克隆[Web端代码仓库](https://github.com/Daddies-of-SE/ReedSailing-Web)
+- 在`js/`目录下的app.js中的server中配置后端接口服务器接口url。本地部署时应改为`http://127.0.0.1:8000/api/`
 
-### 4.2 输入
+#### 4.1.2 后端
 
-#### 4.2.1 数据背景
+##### 4.1.2.1 mysql安装
 
-#### 4.2.2 数据格式
+* 安装mysql
+* 运行`mysql_secure_installation`设置root账号密码
+  * 建议暂时设置为12345678，否则  请修改`backend/settings.py`中的`DATABASES['default']['password']`为实际设置的密码
+* 启动mysql：`mysql.server start`（每次重启电脑后需要运行）
+* 运行`mysql -u root -p`，输入密码后`create database BUAA;`创建数据库
 
-#### 4.2.3 输入举例
+##### 4.1.2.2 django配置
 
-
-
-### 4.3 输出
-
-#### 4.3.1 数据背景
-
-#### 4.3.2 数据格式
-
-#### 4.3.3 输入举例
-
-
-
-### 4.4 出错和回复
+* 克隆[后端代码仓库](https://github.com/Daddies-of-SE/ReedSailing-BackEnd)
+* 在仓库根目录下运行`pip install -r requirements.txt`
+* 进入`django_backend`目录，运行`python manage.py makemigrations`
+* 运行`python manage.py migrate`
 
 
 
-### 4.5 求助查询
+### 4.2 运行与调试
+
+#### 4.2.1 Web端
+
+* 注册管理员账号：直接在buaa数据库中表格BUAA_superAdmin添加，或开启后端`django_backend/backend/urls.py`中有`sudo_register`对应的`register/`路径后通过post请求创建
+
+- 用浏览器打开`index.html`，将自动跳转到登录页面
+
+#### 4.2.2 后端
+
+* 运行`python manage.py collectstatic`将静态文件复制到`django_backend/static`
+
+* 运行`python manage.py createcachetable`建立缓存表
+
+* 运行`python manage.py runserver`
+  * 运行时不要在本地开vpn代理，会导致报错退出
+  * 会在默认的`http://127.0.0.1:8000`部署服务器
+
+
+
+
+### 4.3 求助查询
+
+后端Django相关资料请查询[文档仓库](https://github.com/Daddies-of-SE/SE2021_doc)的“django基础”、“DRF资料”目录
+
+
 
 
 
@@ -150,7 +175,7 @@
 
 ### 5.1 管理员登录
 
-https://www.reedsailing.xyz/login.html
+登录https://www.reedsailing.xyz/login.html
 
 <img src="WebUserGuide.assets/image-20210526002002795.png" alt="image-20210526002002795" style="zoom: 67%;" />
 
@@ -208,23 +233,7 @@ https://www.reedsailing.xyz/login.html
 
 ## 7 程序文件和数据文件一览表
 
-### 7.1 小程序前端
-
-| 目录/文件    | 描述                                             |
-| ------------ | ------------------------------------------------ |
-| components/  | 自定义组件目录                                   |
-| icon/        | 图标文件目录                                     |
-| lib/         | 使用的第三方UI库（iview、vant）目录              |
-| pages/       | 页面源代码目录，每个页面包括wxml、js、wxss、json |
-| utils/       | 工具脚本目录，包括登录、交互和一些常用工具       |
-| app.js       | 全局数据和函数                                   |
-| app.json     | 全局页面、组件配置                               |
-| app.wxss     | 全局样式                                         |
-| README.md    | 自述文件，包含页面详细说明                       |
-| sitemap.json | 小程序索引配置                                   |
-| theme.json   | 小程序全局主题样式                               |
-
-### 7.2 Web前端
+### 7.1 Web前端
 
 | 目录/文件                | 描述             |
 | ------------------------ | ---------------- |

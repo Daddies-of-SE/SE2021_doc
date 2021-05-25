@@ -210,37 +210,72 @@
 
 
 
-## 4 使用说明
+## 4 开发者使用说明
 
 ### 4.1 安装和初始化
 
+#### 4.1.1 小程序前端
+
+- 下载微信开发者工具
+- 克隆[小程序端代码仓库](https://github.com/Daddies-of-SE/ReedSailing-Wechat)
+- 安装[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)稳定版
+- 进入小程序项目->小程序，选择创建项目界面中的导入项目栏，目录选择该项目文件，AppID选择使用测试号，之后点击导入即可
+- 在项目根目录下的app.js中的server中配置后端接口服务器接口url。本地部署时应改为`http://127.0.0.1:8000/api/`。由于小程序对安全性的要求较高，要求必须使用合法域名以及HTTPS证书，如果在本地部署后端，需要在开发者工具按钮栏详情中勾选“不验证合法域名”
+
+#### 4.1.2 后端
+
+##### 4.1.2.1 mysql安装
+
+* 安装mysql
+* 运行`mysql_secure_installation`设置root账号密码
+  * 建议暂时设置为12345678，否则  请修改`backend/settings.py`中的`DATABASES['default']['password']`为实际设置的密码
+* 启动mysql：`mysql.server start`（每次重启电脑后需要运行）
+* 运行`mysql -u root -p`，输入密码后`create database BUAA;`创建数据库
+
+##### 4.1.2.2 django配置
+
+* 克隆[后端代码仓库](https://github.com/Daddies-of-SE/ReedSailing-BackEnd)
+* 在仓库根目录下运行`pip install -r requirements.txt`
+* 进入`django_backend`目录，运行`python manage.py makemigrations`
+* 运行`python manage.py migrate`
 
 
-### 4.2 输入
 
-#### 4.2.1 数据背景
+### 4.2 运行与调试
 
-#### 4.2.2 数据格式
+#### 4.2.1 小程序端
 
-#### 4.2.3 输入举例
+- 在开发者工具中可以进行代码编辑，保存后左侧模拟器可以在电脑上进行操作模拟，调试器console中显示调试信息
+- 点击”预览“可以生成二维码在手机上查看，半小时内有效
+
+#### 4.2.2 后端
+
+* 运行`python manage.py collectstatic`将静态文件复制到`django_backend/static`
+
+* 运行`python manage.py createcachetable`建立缓存表
+
+* 运行`python manage.py runserver`
+
+  * 运行时不要在本地开vpn代理，会导致报错退出
+  * 会在默认的`http://127.0.0.1:8000`部署服务器
+
+* 检验运行是否成功：
+
+  1. 打开小程序开发工具，进入”我的“——”我的账户“，输入邮箱地址点击”发送验证码“
+
+  * 开发者工具中需要在”详情“——”本地配置“里勾选 ”不校验合法域名…“，否则request会无法访问
+  * 此时后端console上显示”发送邮件成功“，邮箱里会收到验证码邮件
+  * 小程序的`app.js`里的server设定为`http://127.0.0.1:8000`
+
+  2. 打开`http://127.0.0.1:8000/api/docs/`，找到对应接口点击interact进行交互
 
 
 
-### 4.3 输出
+### 4.3 求助查询
 
-#### 4.3.1 数据背景
+微信开发者工具以及小程序的其他相关信息请查询[微信开发者文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 
-#### 4.3.2 数据格式
-
-#### 4.3.3 输入举例
-
-
-
-### 4.4 出错和回复
-
-
-
-### 4.5 求助查询
+后端Django相关资料请查询[文档仓库](https://github.com/Daddies-of-SE/SE2021_doc)的“django基础”、“DRF资料”目录
 
 
 
@@ -464,37 +499,7 @@
 | sitemap.json | 小程序索引配置                                   |
 | theme.json   | 小程序全局主题样式                               |
 
-### 7.2 Web前端
-
-| 目录/文件                | 描述             |
-| ------------------------ | ---------------- |
-| css/                     | 样式文件目录     |
-| fonts/                   | 字体文件目录     |
-| images/                  | 图片目录         |
-| js/                      | 脚本目录         |
-| lib/                     | layui库目录      |
-| activity-add.html        | 新建活动页面     |
-| activity-edit.html       | 编辑活动页面     |
-| activity-list.html       | 活动列表页面     |
-| application-confirm.html | 组织审核确认页面 |
-| application-list.html    | 组织审核列表页面 |
-| block-add.html           | 新建版块页面     |
-| block-edit.html          | 编辑板块页面     |
-| block-list.html          | 版块列表页面     |
-| comment-detail.html      | 评论详情页面     |
-| comment-list.html        | 评论列表页面     |
-| feedback-detail.html     | 反馈详情页面     |
-| feedback-list.html       | 反馈列表页面     |
-| index.html               | 主页             |
-| login.html               | 登录页面         |
-| member-edit.html         | 用户编辑页面     |
-| member-list.html         | 用户列表页面     |
-| organization-add.html    | 新建组织页面     |
-| organization-edit.html   | 编辑组织页面     |
-| organization-list.html   | 组织列表页面     |
-| README.md                | 自述文件         |
-
-### 7.3 后端
+### 7.2 后端
 
 | 目录/文件        | 描述                 |
 | ---------------- | -------------------- |
