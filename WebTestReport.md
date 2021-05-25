@@ -75,9 +75,10 @@ c) 被测软件为网页，可以运行在现代主流浏览器上。
 
 ### 4.1 测试环境
 
-| 软件环境                                                     | 硬件环境         |
-| ------------------------------------------------------------ | ---------------- |
-| Chrome 90.0.4430.93、Safari 14.0.3；Windows 10、Mac OS 11.2.3 | MacBook Pro 2020 |
+| 软件环境                         | 硬件环境           |
+| -------------------------------- | ------------------ |
+| Safari 14.0.3; Mac OS 11.2.3     | MacBook Pro 2020   |
+| Chrome 90.0.4430.212 ;Windows 10 | LENOVO ideapad 300 |
 
 ### 4.2 测试工具
 
@@ -117,11 +118,7 @@ TODO
 
 ## 7 测试记录
 
-### 7.1 xxx页面
-
-#### 7.1.1 xxx功能
-
-
+### 7.0 模板
 
 | 测试目的     |              |
 | ------------ | ------------ |
@@ -130,6 +127,1151 @@ TODO
 |              |              |
 | **测试结论** |              |
 
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">开聚实</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
 
 
-#### 7.1.2 xxx功能
+### 
+
+### 7.1 登录页面
+
+#### 7.1.1 管理登录
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试管理员登录功能</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>正常登录</td>
+        <td>输入正确用户名与密码</td>
+        <td>登录成功，跳转到首页</td>
+        <td>登录成功，跳转到首页</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>空用户名</td>
+        <td>不输入用户名</td>
+        <td>登录失败，提示“必填项不能为空”</td>
+        <td>登录失败，提示“必填项不能为空”</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>错误用户名</td>
+        <td>输入错误用户名</td>
+        <td>登录失败，提示“用户名或密码错误”</td>
+        <td>登录失败，提示“用户名或密码错误”</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>空密码</td>
+        <td>不输入密码</td>
+        <td>登录失败，提示“必填项不能为空”</td>
+        <td>登录失败，提示“必填项不能为空”</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>错误密码</td>
+        <td>输入错误密码</td>
+        <td>登录失败，提示“用户名或密码错误”</td>
+        <td>登录失败，提示“用户名或密码错误”</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">开聚实</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+### 
+
+### 7.2 用户管理页面
+
+#### 7.2.1
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">开聚实</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+
+
+
+
+### 7.3 版块管理页面
+
+
+
+
+
+### 7.4 组织管理页面
+
+
+
+### 7.5 活动管理页面
+
+#### 7.5.1 查看活动列表
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试进入“活动管理”页面能否查看完整的活动列表</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">登录超级管理员账号</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>查看所有的活动</td>
+        <td>无</td>
+        <td>社团，博雅，学生会，志愿，个人版块下所有的活动</td>
+        <td>社团，博雅，学生会，志愿，个人版块下所有的活动</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+
+
+#### 7.5.2 搜索活动
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+#### 7.5.3 添加活动
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试管理端能否创建活动</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">登录超级管理员账号</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>在社团板块下创建未开始活动</td>
+        <td>活动名称:"这是管理端创建的活动" ;开始时间:"2021-05-26 08:00:00" ;结束时间:"2021-05-28 20:30:00" ;人数限制:10 ;描述:"" ;发起人:"yy"; 分类:"娱乐" ;地点:"绿园情侣幽会处" ;板块:社团 ;组织:"windows吐槽大会" ;</td>
+        <td>管理端的活动列表出现此活动；小程序端对应的社团组织下出现此活动</td>
+        <td>管理端的活动列表出现此活动；小程序端对应的社团组织下出现此活动</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>在博雅板块下创建正在进行的活动</td>
+        <td>活动名称:"新博雅" ;开始时间:"2021-05-24 00:00:00" ;结束时间:"2021-05-27 00:00:00" ;人数限制:10 ;描述:"" ;发起人:"行"; 分类:"娱乐" ;地点:"人文讲堂" ;板块:博雅 ;组织:"" ;</td>
+        <td>无法创建活动</td>
+        <td>无法创建活动，显示“开始时间不能早于当前时间”</td>
+        <td>无</td>
+    </tr>
+        <tr>
+        <td>3</td>
+        <td>在博雅板块下创建未开始活动</td>
+        <td>活动名称:"新博雅" ;开始时间:"2021-05-26 00:00:00" ;结束时间:"2021-05-28 00:00:00" ;人数限制:10 ;描述:"" ;发起人:"行"; 分类:"娱乐" ;地点:"人文讲堂" ;板块:博雅 ;组织:"" ;</td>
+        <td>管理端的活动列表出现此活动；小程序端博雅板块下出现此活动</td>
+        <td>管理端的活动列表出现此活动；小程序端博雅板块下出现此活动</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+#### 7.5.4 编辑活动
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试能否修改已发布活动的名称，开始时间，结束时间，描述，人数上限，地点信息</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">登录超级管理员账号</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>修改正在进行活动的名称和描述</td>
+        <td>活动名“长期招募推送编辑”变更为"长期招募推送编辑，有意者私聊"；描述“1”变更为“待遇丰厚，有能力者优先”</td>
+        <td>管理端和小程序端显示的活动名称和描述按照修改内容变更</td>
+        <td>修改失败，显示“开始时间不能早于当前时间”</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>修改未开始活动的名称和描述</td>
+        <td>无</td>
+        <td>管理端和小程序端显示的活动名称和描述按照修改内容变更</td>
+        <td>编辑按钮无法点开</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">不通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+#### 7.5.5 删除活动
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试能否删除活动</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">登录超级管理员账号</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>删除id=95的已结束活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>删除id=41的正在进行活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>删除id=103的未开始活动</td>
+        <td>无</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>管理端和小程序端此活动被删除</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+
+#### 7.5.6 批量删除活动
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试能否批量删除活动</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">登录超级管理员账号</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td>1</td>
+        <td>删除id=78,79,102的活动</td>
+        <td>无</td>
+        <td>管理端和小程序端这些活动被删除</td>
+        <td>实际上管理端和小程序端这些活动被删除,但是显示“部分活动未删除，请重新尝试”的窗口</td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">不通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/25</td>
+    </tr>
+</table>
+
+
+
+### 7.6 评论管理页面
+
+#### 7.6.1 查看评论列表
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.6.2 搜索评论
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.6.3 查看评论详情
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.6.4 删除评论
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.6.5 批量删除评论
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+
+
+
+### 7.7 反馈管理页面
+
+#### 7.7.1 查看反馈列表
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.7.2 搜索反馈
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.7.3 查看反馈详情
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.7.4 删除反馈
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
+
+#### 7.7.5 批量删除反馈
+
+
+
+<table>
+    <tr>
+        <th>测试目的</th>
+        <td colspan="5">测试XXXX</td>
+    </tr>
+    <tr>
+        <th>前提条件</th>
+        <td colspan="5">无</td>
+    </tr>
+    <tr>
+        <th>参考信息</th>
+        <td colspan="2">无</td>
+        <th>特殊说明</th>
+        <td colspan="2">无</td>
+    </tr>
+    <tr>
+        <th>用例编号</th>
+        <th>用例说明</th>
+        <th>输入/操作</th>
+        <th>期望结果</th>
+        <th>测试结果</th>
+        <th>备注</th>
+    </tr>
+    <!-- >想插入更多行请复制以下内容</-->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>无</td>
+    </tr>
+    <!-- >想插入更多行请复制以上内容</-->
+    <tr>
+        <th>测试结论</th>
+        <td colspan="5">通过</td>
+    </tr>
+    <tr>
+        <th>测试人员</th>
+        <td colspan="2">乐洋</td>
+        <th>测试日期</th>
+        <td colspan="2">2021/5/23</td>
+    </tr>
+</table>
