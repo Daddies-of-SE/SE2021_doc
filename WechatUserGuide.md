@@ -477,9 +477,48 @@
 
 ## 6 非常规过程
 
+### 6.1 日志文件位置
 
+nginx的访问日志：`/var/log/nginx/access.log`
 
+nginx的报错日志：`/var/log/nginx/error.log`
 
+uwsgi的日志：`~/ReedSailing-Backend/django_backend/buaa.log`
+
+django的日志：`~/ReedSailing-Backend/django_backend/logs/all.log`
+
+### 6.2 服务器重启后恢复服务的流程
+
+```shell
+#启动nginx
+nginx
+#启动uwsgi
+uwsgi --ini ~/ReedSailing-Backend/django_backend/uwsgi.ini
+
+#启动mysql
+#建议在tmux中做，执行完后kill-session，不会导致mysql被关闭
+#因为启动完会阻塞命令行而且按Ctrl+C不能退出
+tmux new
+mysqld --user=root
+#按Ctrl+B,然后按X,之后输入y
+
+#启动daphne
+cd ~/ReedSailing-BackEnd/django_backend/
+tmux new -s daphne
+daphne -p 8001 backend.asgi:application
+#按Ctrl+B，然后按D，脱离tmux会话（tmux会话会后台运行，不会被杀死）
+
+#在tmux中启动博雅爬取脚本
+tmux new -s boya
+#启动博雅脚本，记得输入用户名和密码
+python ~/ReedSailing-Backend/liberal_query/bykc.py
+#按下Ctrl+B，然后按%（要按Shift+5）
+#在新打开的空格中启动定时任务
+python ~/ReedSailing-Backend/django_backend/manage.py crontab add
+#跟踪输出的日志
+tail -f /home/get_boya.log
+#按下Ctrl+B，然后按D，脱离tmux会话
+```
 
 ## 7 程序文件和数据文件一览表
 
