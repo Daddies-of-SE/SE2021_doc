@@ -550,7 +550,7 @@ tail -f /home/get_boya.log
 
 | 目录/文件        | 描述                 |
 | ---------------- | -------------------- |
-| LiberalQuery/    | 博雅爬虫脚本目录     |
+| liberal_query/   | 博雅爬虫脚本目录     |
 | django_backend/  | django后端文件目录   |
 | requirements.txt | python依赖包列表文件 |
 | README.md        | 自述文件             |
