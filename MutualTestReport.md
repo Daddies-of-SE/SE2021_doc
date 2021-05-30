@@ -44,7 +44,7 @@ c) 被测软件为网页（管理端）及小程序（用户端），分别在�
 | Safari 14.0.3; Mac OS 11.2.3     | MacBook Pro 2020   |
 | Chrome 90.0.4430.212 ;Windows 10 | LENOVO ideapad 300 |
 | 微信7.0.21; Android 11           | Xiaomi 10          |
-| 微信x.xx.xx; iOS 14.X            | iPhone 12          |
+| 微信8.0.6; iOS 14.4.2            | iPhone 12          |
 
 ### 2.2 测试工具
 
