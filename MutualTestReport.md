@@ -130,7 +130,23 @@ c) 被测软件为网页（管理端）及小程序（用户端），分别在�
 
 <img src="MutualTestReport.assets/image-20210531015539713.png" alt="image-20210531015539713" style="zoom:25%;" />
 
+#### 3.3.11 查看消息后未读提示红点不消失（Sev=2）
 
+点开消息查看被回复内容后，返回我的消息页面红色提示没有消失
+
+<img src="MutualTestReport.assets/image-20210531143556080.png" alt="image-20210531143556080" style="zoom:50%;" />
+
+#### 3.3.12 活动发布失败不提示原因（Sev=2）
+
+发布活动失败
+
+<img src="MutualTestReport.assets/image-20210531154737649.png" alt="image-20210531154737649" style="zoom:50%;" />
+
+#### 3.3.13 发布活动选择时间为灰色（Sev=3）
+
+用户使用手册未说明发布活动时间限制，但活动发布时间选择有限制
+
+<img src="MutualTestReport.assets/image-20210531154901031.png" alt="image-20210531154901031" style="zoom:33%;" />
 
 ### 3.4 Web端测试结果
 
@@ -138,11 +154,17 @@ c) 被测软件为网页（管理端）及小程序（用户端），分别在�
 
 活动审核驳回理由未限制字数，且会完整地返回至前端造成界面异常
 
-<img src="MutualTestReport.assets/image-20210531014228836.png" alt="image-20210531014228836" style="zoom: 25%;" />
+<img src="MutualTestReport.assets/image-20210531154901031.png" alt="image-20210531154901031" style="zoom:50%;" />
 
 <img src="MutualTestReport.assets/image-20210531014249679.png" alt="image-20210531014249679" style="zoom:25%;" />
 
+#### 3.4.2 所有用户显示用户不完整（Sev=1）
 
+已认证的id=11 用户未出现在所有用户列表中
+
+![image-20210531144154568](MutualTestReport.assets/image-20210531144154568.png)
+
+![image-20210531144042427](MutualTestReport.assets/image-20210531144042427.png)
 
 
 
