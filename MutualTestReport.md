@@ -148,6 +148,28 @@ c) 被测软件为网页（管理端）及小程序（用户端），分别在�
 
 <img src="MutualTestReport.assets/image-20210531154901031.png" alt="image-20210531154901031" style="zoom:33%;" />
 
+#### 3.3.14 刚进入小程序时首页中综合栏目下无活动（Sev=2）
+
+刚进入小程序时首页中综合栏目下无活动，切到其他页面再转回来时也没有，而转到体育或讲座栏目下再转回来时会有活动
+
+<img src="MutualTestReport.assets/image-20210531224828412.png" alt="image-20210531224828412" style="zoom: 33%;" />
+
+#### 3.3.15 日程表显示错误（Sev=3）
+
+2021年11月（事实上2022年8月也是）多了一行空白周
+
+<img src="MutualTestReport.assets/image-20210531224945395.png" alt="image-20210531224945395" style="zoom:33%;" />
+
+#### 3.3.16 私聊消息问题（Sev=3）
+
+在与任何进入用户对象的私信界面后，即使不发送消息，该用户对象也会出现在私聊消息界面中
+
+<img src="MutualTestReport.assets/image-20210531225032850.png" alt="image-20210531225032850" style="zoom:33%;" />
+
+
+
+
+
 ### 3.4 Web端测试结果
 
 #### 3.4.1 活动驳回理由长度上限（Sev=2）
